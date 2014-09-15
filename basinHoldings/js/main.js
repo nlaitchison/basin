@@ -2,6 +2,10 @@ $(function(){
 
 	console.log('running');
 
+	// NAVIGATION CURRENT
+
+	// $(".company-link").addClass( "active" );
+
 	// Companies Hover Effects
 
 	$(".company.supply").hover(
@@ -43,6 +47,7 @@ $(function(){
 			$(".company.energy .company-text").removeClass( "current" );
 		}
 	);
+
 
 	// SMOOTH SCROLLING
 

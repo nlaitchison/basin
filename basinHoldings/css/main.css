@@ -59,6 +59,18 @@ p.center-text{
 a{
   color: #701e1a;
   text-decoration: none;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+a:hover{
+  color: #404040;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
 }
 
 ul{
@@ -86,7 +98,7 @@ header{
   background: #fff;
 /*  border-bottom: 4px solid #c5c5c5;*/
   padding: 15px 0 20px;
-    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
   -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
   z-index: 2;
@@ -116,6 +128,10 @@ nav li{
   text-align: center;
   padding: 0 25px 1px;
   border-bottom: 3px solid #dddcdc;
+  -webkit-transition:all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out;
+  -o-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
 }
 
 nav a{
@@ -123,6 +139,14 @@ nav a{
   color: #404040;
   font-size: 13px;
   line-height: 35px;
+}
+
+nav li:hover{
+  border-bottom: 3px solid #701e1a;
+  -webkit-transition:all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out;
+  -o-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
 }
 
 li.active{
@@ -216,7 +240,7 @@ section#companies{
   height: 0;
   overflow: hidden;
 
-    -webkit-transition:all .6s ease-in-out;
+  -webkit-transition:all .6s ease-in-out;
   -moz-transition:all .6s ease-in-out;
   -o-transition:all .6s ease-in-out;
   transition:all .6s ease-in-out;
@@ -252,6 +276,11 @@ footer{
 /* ---------------------------------------------------------------------------------------------------
     ∆ Grid & Queries
 ---------------------------------------------------------------------------------------------------*/
+
+.main-container{
+  max-width: 2000px;
+}
+
 
 .container{
   width: 73.68%; /*1050px*/
