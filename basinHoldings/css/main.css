@@ -85,6 +85,10 @@ li{
   margin-top: 70px;
 }
 
+.sub-container{
+  margin-top: 10px;
+}
+
 .clear_fix{
 	clear: both;
 }
@@ -155,6 +159,18 @@ li.active{
 
 /* Sections --------------------------------------*/
 
+.img-divider img{
+  width: 100%;
+}
+
+.icon{
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+/* Banner --------------------------------------*/
+
 #banner{
   background: url(../images/banner.jpg) no-repeat top center;
   background-size: 100%;
@@ -183,24 +199,6 @@ p.banner-text-two{
 p.banner-text-three{
   font-size: 19px;
   line-height: 28px;
-}
-
-#locations p{
-  padding: 0 0 10px 30px;
-}
-
-.locations-map img{
-  width: 100%;
-}
-
-.img-divider img{
-  width: 100%;
-}
-
-.icon{
-  width: 70px;
-  height: 70px;
-  margin: 0 auto;
 }
 
 /* Companies --------------------------------------*/
@@ -263,6 +261,62 @@ section#companies{
 .company-text p{
   font-size: 14px;
   line-height: 22px;
+}
+
+/* Locations --------------------------------------*/
+
+#locations p{
+  padding: 0 0 10px 30px;
+}
+
+.locations-map img{
+  width: 100%;
+}
+
+/* Contact Form --------------------------------------*/
+
+.form-input{
+  height: 45px;
+  width: 100%;
+  clear: both;
+}
+
+.form-input label{
+  font-size: 14px;
+  text-align: right;
+  width: 13%;
+  float: left;
+  padding-right: 2%;
+  line-height: 30px;
+}
+
+.form-input input, .form-input textarea{
+  background-color: #dddcdc;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  float: left;
+  width: 76%;
+}
+
+.form-input textarea{
+  height: 100px;
+  font: 13px 'Helvetica Neue', sans-serif;
+}
+input#contact-submit{
+  background-color: #701e1a;
+  border-radius: 4px;
+  border: none;
+  padding: 8px;
+  text-transform: uppercase;
+  color: #ddd;
+  letter-spacing: 1px;
+  width: 100px;
+  margin: 10px auto 0;
+}
+
+#contact p{
+  padding-top: 0;
 }
 
 /* Footer --------------------------------------*/
