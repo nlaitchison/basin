@@ -181,11 +181,14 @@ p.banner-text-three{
 
 /* Companies --------------------------------------*/
 
+section#companies{
+  /*padding-bottom: 95px;*/
+}
+
 .company{
   border-bottom: 5px solid #701e1a;
   text-align: center;
   position: relative;
-  margin-bottom: 95px;
   cursor: pointer;
 }
 
