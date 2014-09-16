@@ -222,27 +222,32 @@ section#companies{
   cursor: pointer;
 }
 
+.company-logo{
+  box-sizing: border-box;
+  padding: 20px 15px 40px;
+}
+
 .company img{
-  padding: 20px 0 40px;
+  width: 100%;
 }
 
 .company.supply{
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .company.tools, .company.rentals{
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .company.energy{
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .company-text{
   position: absolute;
   bottom: 0;
   background: #dddcdc url(../images/triangle.png) no-repeat top center;
-  padding: 15px 8px 8px;
+  padding: 18px 8px 8px;
   height: 0;
   overflow: hidden;
 
@@ -256,7 +261,7 @@ section#companies{
   position: absolute;
   bottom: 0;
   background: rgba(218,217,217,.9) url(../images/triangle.png) no-repeat top center;
-  padding: 15px 8px 8px;
+  padding: 18px 8px 8px;
   height: 126px;
   overflow: hidden;
 
@@ -416,15 +421,14 @@ ul.flag-locations li{
 
 
 @media only screen and (max-width: 959px) {
-  .column{ float: none; }
-  .one-6, .two-6, .three-6, .four-6,
-  .five-6, .one-4, .two-4, .three-4,
-  .four-4{ width: 100%; }
+  .column.two-4, .column.two-6, .column.four-6{ width: 100%; float: none; }
+  .one-4{ width: 50%;}
   .left{ padding: 0; }
   .right{ padding: 30px 0 0 0; }
 /*  .icon{ width: 60px; height: 60px; }*/
   h2{ padding: 25px 0 20px; }
-  #banner{ background-size: 150%; }
+/*  #banner{ background-size: 150%; }*/
+ .company-logo{ padding: 20px 60px 40px;}
 }
 
 @media only screen and (max-width: 767px) {
@@ -435,12 +439,17 @@ ul.flag-locations li{
   .form-input textarea{ height: 130px; }
   .form-input label{ float: none; clear: both; text-align: left; width: 100%; padding: 0; }
 /*  .icon{ width: 50px; height: 50px; }*/
-  #banner{ background-size: 175%; }
+/*  #banner{ background-size: 175%; }*/
+ .company-logo{ padding: 40px 30px 40px;}
 }
 
 @media only screen and (max-width: 480px) {
-
-  #banner{ background-size: 200%; }
+  .column{ float: none;}
+  .one-6, .two-6, .three-6,
+  .four-6, .five-6, .one-4,
+  .two-4, .three-4, .four-4{ width: 100%; }
+/*  #banner{ background-size: 200%; }*/
+ .company-logo{ padding: 50px 60px 40px;}
 
 }
 
