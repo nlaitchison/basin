@@ -89,7 +89,7 @@ li{
   margin-top: 10px;
 }
 
-.clear_fix{
+.clear-fix{
 	clear: both;
 }
 
@@ -266,14 +266,26 @@ section#companies{
 /* Locations --------------------------------------*/
 
 #locations p{
-  padding: 0 0 10px 30px;
+  box-sizing: border-box;
+  padding: 0 0 10px 15px;
+}
+
+.locations-map{
+  box-sizing: border-box;
+  padding-right: 15px;
 }
 
 .locations-map img{
   width: 100%;
 }
 
-/* Contact Form --------------------------------------*/
+/* Contact --------------------------------------*/
+
+
+form{
+    padding-right: 15px;
+    box-sizing: border-box;
+}
 
 .form-input{
   height: 45px;
@@ -284,19 +296,21 @@ section#companies{
 .form-input label{
   font-size: 14px;
   text-align: right;
-  width: 13%;
+  width: 20%;
   float: left;
-  padding-right: 2%;
+  padding-right: 15px;
   line-height: 30px;
+  box-sizing: border-box;
 }
 
 .form-input input, .form-input textarea{
   background-color: #dddcdc;
+  box-sizing: border-box;
   border: none;
   border-radius: 2px;
   padding: 10px;
   float: left;
-  width: 76%;
+  width: 80%;
 }
 
 .form-input textarea{
@@ -316,7 +330,7 @@ input#contact-submit{
 }
 
 #contact p{
-  padding-top: 0;
+  padding: 0 0 0 15px;
 }
 
 /* Footer --------------------------------------*/
@@ -324,7 +338,29 @@ input#contact-submit{
 footer{
   background: #dddcdc;
   font-size: 12px;
-  padding: 25px 0;
+  padding: 60px 0;
+}
+
+footer p{
+  padding: 0 0 15px;
+  line-height: 22px;
+}
+
+#flag-container{
+  margin: 10px auto 0;
+  width: 94.67%; /*1003px;*/
+}
+
+.flag{
+  width: 55px;
+  height: 105px;
+  float: left;
+  padding: 0 2px;
+}
+
+ul.flag-locations li{
+  float: none;
+  text-align: center;
 }
 
 /* ---------------------------------------------------------------------------------------------------
@@ -335,10 +371,10 @@ footer{
   max-width: 2000px;
 }
 
-
 .container{
   width: 73.68%; /*1050px*/
   max-width: 73.68%;
+  min-width: 320px;
   /*min-width: 750px;*/
   margin: 0 auto;
   clear: both;
@@ -358,6 +394,25 @@ footer{
 .two-4{ width: 50%; }
 .three-4{ width: 75%; }
 .four-4{ width: 100%; }
+
+
+
+@media only screen and (max-width: 959px) {
+  .column{ float: none; }
+  .one-6, .two-6, .three-6, .four-6,
+  .five-6, .one-4, .two-4, .three-4,
+  .four-4{ width: 100%; }
+}
+
+@media only screen and (max-width: 767px) {
+  .form-input{ height: auto; }
+  .form-input input, .form-input textarea{ float: none; clear: both; width: 96%;}
+  .form-input label{ float: none; clear: both; text-align: left; width: 100%; padding: 0;}
+}
+
+@media only screen and (max-width: 480px) {
+
+}
 
 /*.one-5{ width: 20%; min-width: 150px;}
 .two-5{ width: 40%; }
