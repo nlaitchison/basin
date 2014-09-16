@@ -93,16 +93,6 @@ li{
   text-align: center;
 }
 
-.left{
-  box-sizing: border-box;
-  padding-left: 15px;
-}
-
-.right{
-  box-sizing: border-box;
-  padding-right: 15px;
-}
-
 .clear-fix{
 	clear: both;
 }
@@ -297,8 +287,8 @@ section#companies{
 
 
 form{
-    padding-right: 15px;
-    box-sizing: border-box;
+/*    padding-right: 15px;
+    box-sizing: border-box;*/
 }
 
 .form-input{
@@ -397,6 +387,16 @@ ul.flag-locations li{
 
 .column{
   float: left;
+}
+
+.left{
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.right{
+  box-sizing: border-box;
+  padding-right: 15px;
 }
 
 .one-6{width: 16.66%;}
