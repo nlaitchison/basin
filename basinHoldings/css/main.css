@@ -188,7 +188,7 @@ header{
 }
 
 .mobile-header nav{
-    background: rgba(255,255,255,.9);
+    background: rgba(255,255,255,.95);
     padding-top: 65px;
     position: absolute;
 }
