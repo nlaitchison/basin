@@ -442,7 +442,7 @@ footer p{
 
 #flag-container{
   margin: 10px auto 0;
-  width: 94.67%; /*1003px;*/
+  width: 1003px;
 }
 
 .flag{
@@ -499,6 +499,10 @@ ul.flag-locations li{
 .three-4{ width: 75%; }
 .four-4{ width: 100%; }
 
+@media only screen and (max-width: 1438px){
+  #flag-container{ width: 94.67%;}
+}
+
 @media only screen and (max-width: 1120px){
   .desktop-header #logo{ padding-left: 15px; }
   .desktop-header nav ul{ width: 609px;}
@@ -533,6 +537,7 @@ ul.flag-locations li{
   .four-6, .five-6, .one-4,
   .two-4, .three-4, .four-4{ width: 100%; }
   .company-logo{ padding: 50px 60px 40px;}
+  #flag-container { width: 80%; }
 }
 
 /*.one-5{ width: 20%; min-width: 150px;}
