@@ -6,6 +6,23 @@ $(function(){
 
 	// $(".company-link").addClass( "active" );
 
+	var menuOpen = false;
+
+	$("#menu-btn").click(
+		function() {
+			console.log('click');
+			if(!menuOpen){
+				$(".mobile-header nav").addClass( "open" );
+				menuOpen = true;
+			}
+			else if(menuOpen){
+				$(".mobile-header nav").removeClass( "open" );
+				menuOpen = false;
+			}
+
+		}
+	);
+
 	// Companies Hover Effects
 
 	$(".company.supply").hover(
