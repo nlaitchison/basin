@@ -189,10 +189,11 @@ header{
 }
 
 .mobile-header nav{
-  background: rgba(242,242,242,.95);
+  width: 100%;
   padding-top: 65px;
   position: absolute;
   top: -410px;
+  background: rgba(242,242,242,.95);
   -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.15);
   -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.15);
   box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.15);
@@ -498,15 +499,20 @@ ul.flag-locations li{
 .three-4{ width: 75%; }
 .four-4{ width: 100%; }
 
+@media only screen and (max-width: 1120px){
+  .desktop-header #logo{ padding-left: 10px; }
+  .desktop-header nav ul{ width: 609px;}
+  .desktop-header nav li{ padding: 0 10px; }
+}
 
-
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 959px){
   .column.two-4, .column.two-6, .column.four-6{ width: 100%; float: none; }
   .one-4{ width: 50%;}
   .left{ padding: 0; }
   .right{ padding: 30px 0 0 0; }
   h2{ padding: 25px 0 20px; }
   .company-logo{ padding: 20px 60px 40px;}
+  .desktop-header nav ul{ float: right; }
 }
 
 @media only screen and (max-width: 767px) {
