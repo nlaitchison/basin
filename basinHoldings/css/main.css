@@ -517,6 +517,8 @@ ul.flag-locations li{
   .form-input textarea{ height: 130px; }
   .form-input label{ float: none; clear: both; text-align: left; width: 100%; padding: 0; }
   .company-logo{ padding: 40px 30px 40px;}
+  .desktop-header{ display: none; }
+  .mobile-header{ display: block; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -525,9 +527,6 @@ ul.flag-locations li{
   .four-6, .five-6, .one-4,
   .two-4, .three-4, .four-4{ width: 100%; }
   .company-logo{ padding: 50px 60px 40px;}
-  .desktop-header{ display: none; }
-  .mobile-header{ display: block; }
-
 }
 
 /*.one-5{ width: 20%; min-width: 150px;}
