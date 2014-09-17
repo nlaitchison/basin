@@ -177,6 +177,7 @@ header{
 }
 
 .mobile-header .button-section{
+  box-sizing: border-box;
   background: #fff;
   padding: 12px 10px;
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
@@ -197,7 +198,13 @@ header{
 }
 
 .mobile-header #logo{
-  /*padding-left: 18px;*/
+  width: 100px;
+  float: left;
+}
+
+.mobile-header #menu-btn{
+  width: 34px;
+  float: right;
 }
 
 .mobile-header nav ul{
