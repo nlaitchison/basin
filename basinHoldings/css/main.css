@@ -103,16 +103,19 @@ header{
   top: 0;
   position: fixed;
   width: 100%;
-  background: #fff;
 /*  border-bottom: 4px solid #c5c5c5;*/
+  z-index: 2;
+}
+
+.desktop-header{
+  background: #fff;
   padding: 15px 0 20px;
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
   -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
-  z-index: 2;
 }
 
-#logo{
+.desktop-header #logo{
   float: left;
   width: 100px;
   height: 35px;
@@ -125,14 +128,14 @@ header{
   float: right;
 }*/
 
-nav ul{
+.desktop-header nav ul{
   width: 759px;
   margin: 0 auto;
   text-align: center;
 
 }
 
-nav li{
+.desktop-header nav li{
   text-align: center;
   padding: 0 25px 1px;
   border-bottom: 3px solid #dddcdc;
@@ -142,14 +145,7 @@ nav li{
   transition:all .5s ease-in-out;
 }
 
-nav a{
-  text-transform: uppercase;
-  color: #404040;
-  font-size: 13px;
-  line-height: 35px;
-}
-
-nav li:hover{
+.desktop-header nav li:hover{
   border-bottom: 3px solid #701e1a;
   -webkit-transition:all .5s ease-in-out;
   -moz-transition:all .5s ease-in-out;
@@ -157,9 +153,61 @@ nav li:hover{
   transition:all .5s ease-in-out;
 }
 
-li.active{
+.desktop-header li.active{
   border-bottom: 3px solid #701e1a;
 }
+
+.desktop-header nav a{
+  font-size: 13px;
+  line-height: 35px;
+}
+
+.desktop-header nav a, .mobile-header  nav a{
+  text-transform: uppercase;
+  color: #404040;
+}
+
+.mobile-header nav a{
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.mobile-header{
+  display: none;
+}
+
+.mobile-header .button-section{
+  background: #fff;
+  padding: 10px;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+}
+
+.mobile-header nav{
+    background: rgba(255,255,255,.85);
+    padding-top: 65px;
+    position: absolute;
+}
+
+.mobile-header #logo{
+  /*padding-left: 18px;*/
+}
+
+.mobile-header nav ul{
+  width: 100%;
+}
+
+.mobile-header nav li{
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
 
 /* Sections --------------------------------------*/
 
@@ -331,6 +379,7 @@ form{
   font: 13px 'Helvetica Neue', sans-serif;
   resize: none;
 }
+
 input#contact-submit{
   box-sizing: border-box;
   background-color: #701e1a;
@@ -425,10 +474,8 @@ ul.flag-locations li{
   .one-4{ width: 50%;}
   .left{ padding: 0; }
   .right{ padding: 30px 0 0 0; }
-/*  .icon{ width: 60px; height: 60px; }*/
   h2{ padding: 25px 0 20px; }
-/*  #banner{ background-size: 150%; }*/
- .company-logo{ padding: 20px 60px 40px;}
+  .company-logo{ padding: 20px 60px 40px;}
 }
 
 @media only screen and (max-width: 767px) {
@@ -438,9 +485,7 @@ ul.flag-locations li{
   input#contact-submit { padding: 10px 10px; }
   .form-input textarea{ height: 130px; }
   .form-input label{ float: none; clear: both; text-align: left; width: 100%; padding: 0; }
-/*  .icon{ width: 50px; height: 50px; }*/
-/*  #banner{ background-size: 175%; }*/
- .company-logo{ padding: 40px 30px 40px;}
+  .company-logo{ padding: 40px 30px 40px;}
 }
 
 @media only screen and (max-width: 480px) {
@@ -448,8 +493,9 @@ ul.flag-locations li{
   .one-6, .two-6, .three-6,
   .four-6, .five-6, .one-4,
   .two-4, .three-4, .four-4{ width: 100%; }
-/*  #banner{ background-size: 200%; }*/
- .company-logo{ padding: 50px 60px 40px;}
+  .company-logo{ padding: 50px 60px 40px;}
+  .desktop-header{ display: none; }
+  .mobile-header{ display: block; }
 
 }
 
