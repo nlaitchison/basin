@@ -189,7 +189,7 @@ header{
 }
 
 .mobile-header nav{
-    background: rgba(255,255,255,.95);
+    background: rgba(242,242,242,.95);
     padding-top: 65px;
     position: absolute;
     -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.15);
@@ -205,6 +205,7 @@ header{
 .mobile-header #menu-btn{
   width: 34px;
   float: right;
+  cursor: pointer;
 }
 
 .mobile-header nav ul{
