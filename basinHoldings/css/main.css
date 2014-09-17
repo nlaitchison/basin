@@ -81,14 +81,6 @@ li{
 	float: left;
 }
 
-.main-container{
-  margin-top: 70px;
-}
-
-.sub-container{
-  margin-top: 10px;
-}
-
 .center-text{
   text-align: center;
 }
@@ -295,11 +287,16 @@ section#companies{
   /*padding-bottom: 95px;*/
 }
 
+.companies-container{
+  padding-top: 10px;
+}
+
 .company{
   border-bottom: 5px solid #701e1a;
   text-align: center;
   position: relative;
   cursor: pointer;
+  padding-top: 15px;
 }
 
 .company-logo{
@@ -354,6 +351,7 @@ section#companies{
 .company-text p{
   font-size: 14px;
   line-height: 22px;
+  padding: 5px 0 0;
 }
 
 /* Locations --------------------------------------*/
@@ -463,6 +461,11 @@ ul.flag-locations li{
 
 .main-container{
   max-width: 2000px;
+  margin-top: 70px;
+}
+
+.sub-container{
+  margin-top: 10px;
 }
 
 .container{
@@ -505,8 +508,8 @@ ul.flag-locations li{
 
 @media only screen and (max-width: 1120px){
   .desktop-header #logo{ padding-left: 15px; }
-  .desktop-header nav ul{ width: 609px;}
   .desktop-header nav li{ padding: 0 10px; }
+  .desktop-header nav ul{ width: 609px;}
 }
 
 @media only screen and (max-width: 959px){
@@ -517,6 +520,10 @@ ul.flag-locations li{
   h2{ padding: 25px 0 20px; }
   .company-logo{ padding: 20px 60px 40px;}
   .desktop-header nav ul{ float: right; }
+  .companies-container { padding-top: 0; }
+  .company{ padding-top: 25px; }
+  .company.supply, .company.tools{ margin: 0 10px 0 0; }
+  .company.rentals, .company.energy{ margin: 0 0 0 10px; }
 }
 
 @media only screen and (max-width: 767px) {
@@ -529,6 +536,11 @@ ul.flag-locations li{
   .company-logo{ padding: 40px 30px 40px;}
   .desktop-header{ display: none; }
   .mobile-header{ display: block; }
+  .main-container { margin-top: 63px; }
+  #banner{ background-size: 175%; }
+  p.banner-text-one{ font-size: 24px; }
+  p.banner-text-two{ font-size: 44px; }
+  p.banner-text-three{ font-size: 17px; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -536,8 +548,10 @@ ul.flag-locations li{
   .one-6, .two-6, .three-6,
   .four-6, .five-6, .one-4,
   .two-4, .three-4, .four-4{ width: 100%; }
-  .company-logo{ padding: 50px 60px 40px;}
   #flag-container { width: 80%; }
+  .company-logo{ padding: 50px 60px 40px;}
+  .company{ padding-top: 10px; }
+  .company.supply, .company.rentals, .company.energy, .company.tools{ margin: 0; }
 }
 
 /*.one-5{ width: 20%; min-width: 150px;}
