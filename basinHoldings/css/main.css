@@ -500,7 +500,7 @@ ul.flag-locations li{
 .four-4{ width: 100%; }
 
 @media only screen and (max-width: 1120px){
-  .desktop-header #logo{ padding-left: 10px; }
+  .desktop-header #logo{ padding-left: 15px; }
   .desktop-header nav ul{ width: 609px;}
   .desktop-header nav li{ padding: 0 10px; }
 }
