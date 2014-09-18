@@ -28,7 +28,11 @@ $(function(){
 		console.log(leftPos);
 
 		// if(leftPos < maxLeft+10)
-			$('.bar').css("width", leftPos+95);
+			$('.bar').css("width", leftPos+55);
+
+			if(pos == height){
+				$('.bar').css("width", width);
+			}
 
 	// }
 

@@ -25,21 +25,6 @@ grey: dddcdc
 ---------------------------------------------------------------------------------------------------*/
 
 
-#bar-test{
-  margin-top: -5px;
-  width: 100%;
-  height: 3px;
-  background: #dddcdc;
-}
-
-.bar{
-  position: relative;
-  left: 0;
-  width: 110px;
-  height: 3px;
-  background: #701e1a;
-}
-
 html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption {
 	margin: 0;
 	padding: 0;
@@ -136,7 +121,7 @@ header{
 }*/
 
 .desktop-header nav ul{
-  width: 724px;
+  width: 728px;
   margin: 0 auto;
   text-align: center;
 
@@ -172,6 +157,22 @@ header{
 .desktop-header nav a, .mobile-header  nav a{
   text-transform: uppercase;
   color: #404040;
+}
+
+#bar-test{
+  margin-top: -5px;
+  width: 100%;
+  height: 3px;
+  background: #dddcdc;
+  overflow: hidden;
+}
+
+.bar{
+  position: relative;
+  left: 0;
+  width: 110px;
+  height: 3px;
+  background: #701e1a;
 }
 
 .mobile-header nav a{
@@ -542,7 +543,8 @@ ul.flag-locations li{
 @media only screen and (max-width: 1120px){
   .desktop-header #logo{ padding-left: 15px; }
   .desktop-header nav li{ padding: 0 10px; }
-  .desktop-header nav ul{ width: 609px;}
+  .desktop-header nav ul{ width: 578px;}
+  .bar{ width: 20px;}
 /*  #banner{background-size: 130%;}*/
 }
 
