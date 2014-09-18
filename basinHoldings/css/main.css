@@ -253,7 +253,7 @@ header{
 
 #banner{
   background: url(../images/banner.jpg) no-repeat top center;
-  background-size: 100%;
+/*  background-size: 100%;*/
   height: 450px;
   margin-top: 0;
   padding: 50px 50px 0 0;
@@ -502,7 +502,8 @@ ul.flag-locations li{
 .three-4{ width: 75%; }
 .four-4{ width: 100%; }
 
-@media only screen and (max-width: 1438px){
+@media only screen and (max-width: 1440px){
+  #banner{ background: url(../images/banner-1438.jpg) no-repeat top center; height: 580px;}
   #flag-container{ width: 94.67%;}
 }
 
@@ -510,7 +511,7 @@ ul.flag-locations li{
   .desktop-header #logo{ padding-left: 15px; }
   .desktop-header nav li{ padding: 0 10px; }
   .desktop-header nav ul{ width: 609px;}
-  #banner{background-size: 130%;}
+/*  #banner{background-size: 130%;}*/
 }
 
 @media only screen and (max-width: 959px){
@@ -525,7 +526,8 @@ ul.flag-locations li{
   .company{ padding-top: 25px; }
   .company.supply, .company.tools{ margin: 0 10px 0 0; }
   .company.rentals, .company.energy{ margin: 0 0 0 10px; }
-  #banner{background-size: 150%;}
+/*  #banner{background-size: 150%;}*/
+ #banner{ background: url(../images/banner-959.jpg) no-repeat top center; height: 360px;}
 }
 
 @media only screen and (max-width: 767px) {
@@ -542,7 +544,6 @@ ul.flag-locations li{
   p.banner-text-one{ font-size: 24px; }
   p.banner-text-two{ font-size: 44px; }
   p.banner-text-three{ font-size: 17px; }
-  #banner{ background-size: 185%; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -554,12 +555,12 @@ ul.flag-locations li{
   .company-logo{ padding: 50px 60px 40px;}
   .company{ padding-top: 10px; }
   .company.supply, .company.rentals, .company.energy, .company.tools{ margin: 0; }
-  #banner{ background-size: 180%; height: 200px; }
+  /*#banner{ background-size: 180%; height: 200px; }*/
 }
 
-@media only screen and (max-width: 350px) {
+/*@media only screen and (max-width: 350px) {
   #banner{ background-size: 240%; height: 220px; }
-}
+}*/
 
 /*.one-5{ width: 20%; min-width: 150px;}
 .two-5{ width: 40%; }
