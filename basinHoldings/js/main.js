@@ -6,6 +6,30 @@ $(function(){
 
 	// $(".company-link").addClass( "active" );
 
+
+
+	window.onscroll = function (e) {
+
+	var height = $( 'body' ).height();
+	console.log('height', height);
+
+	var pos = $(document).scrollTop();
+	console.log('pos', pos);
+
+	var width = $( '#bar-test' ).width();
+	console.log('width', width);
+
+	var leftPos = (pos * width) / height;
+	console.log(leftPos);
+
+		$('.bar').css("left", leftPos);
+
+	};
+
+
+
+
+
 	var menuOpen = false;
 
 	$("#menu-btn").click(
