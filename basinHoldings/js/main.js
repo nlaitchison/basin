@@ -2,6 +2,7 @@ $(function(){
 
 	console.log('running');
 
+
 	// NAVIGATION PAGE POSITION BAR
 
 	// when the user is scrolling
@@ -28,32 +29,48 @@ $(function(){
 
 	};
 
+
+	// MENU FUNCTIONS
+
+	// var to check if menu is open
 	var menuOpen = false;
 
+	// when the menu btn is clicked
 	$("#menu-btn").click(
 		function() {
 			console.log('click');
+			// check to see if it's open
 			if(!menuOpen){
+				// if it is, open the menu
 				$(".mobile-header nav").addClass( "open" );
+				// set var
 				menuOpen = true;
 			}
+			// if not
 			else if(menuOpen){
+				// close the menu
 				$(".mobile-header nav").removeClass( "open" );
+				// set var
 				menuOpen = false;
 			}
 
 		}
 	);
 
+	// when an option in the mobile/collapsing nav is clicked
 	$(".mobile-header nav li a").click(
 		function() {
 			console.log('nav');
+			// make sure the menu is actually open
 			if(menuOpen){
+				// then close the menu
 				$(".mobile-header nav").removeClass( "open" );
+				// set var
 				menuOpen = false;
 			}
 		}
 	);
+
 
 	// Companies Hover Effects
 
