@@ -258,9 +258,9 @@ header{
 #banner{
 /*  background: url(../images/banner.jpg) no-repeat top center;*/
 /*  background-size: 100%;*/
-  height: 450px;
+  height: 400px;
   margin-top: 0;
-  padding: 50px 50px 0 0;
+  padding: 60px 50px 0 0;
 }
 
 #banner p{
@@ -512,7 +512,10 @@ ul.flag-locations li{
 .four-4{ width: 100%; }
 
 @media only screen and (max-width: 1440px){
-  #banner{ background: url(../images/banner-1438.jpg) no-repeat top center; height: 580px;}
+  #banner{ background: url(../images/banner-1438.jpg) no-repeat top center; height: 580px; }
+  p.banner-text-one{ font-size: 34px; }
+  p.banner-text-two{ font-size: 52px; padding: 12px 0 25px;}
+  p.banner-text-three{ font-size: 25px; line-height: 35px;}
   #flag-container{ width: 94.67%;}
   #companies-banner{ background: url(../images/companies-banner-1438.jpg) no-repeat top center; }
   #managment-banner{ background: url(../images/managment-banner-1438.jpg) no-repeat top center; }
@@ -555,9 +558,9 @@ ul.flag-locations li{
   .desktop-header{ display: none; }
   .mobile-header{ display: block; }
   .main-container { margin-top: 63px; }
-  p.banner-text-one{ font-size: 24px; }
-  p.banner-text-two{ font-size: 44px; }
-  p.banner-text-three{ font-size: 17px; }
+  p.banner-text-one{ font-size: 26px; }
+  p.banner-text-two{ font-size: 42px; padding: 6px 0 18px;}
+  p.banner-text-three{ font-size: 18px; line-height: 26px;}
 }
 
 @media only screen and (max-width: 480px) {
@@ -574,6 +577,11 @@ ul.flag-locations li{
   #locations-banner{ background: url(../images/locations-banner-480.jpg) no-repeat top center; }
   #contact-banner{ background: url(../images/contact-banner-480.jpg) no-repeat top center; }
   #companies-banner, #managment-banner, #locations-banner, #contact-banner{ height: 360px; }
+  #banner{ padding: 40px 5px 0;}
+  #banner p{text-align: center;}
+  p.banner-text-one{ font-size: 18px; }
+  p.banner-text-two{ font-size: 32px; padding: 0 0 10px; line-height: 45px;}
+  p.banner-text-three{ font-size: 14px; line-height: 22px;}
   /*#banner{ background-size: 180%; height: 200px; }*/
 }
 
