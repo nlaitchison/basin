@@ -534,7 +534,7 @@ ul.flag-locations li{
 .four-4{ width: 100%; }
 
 @media only screen and (max-width: 1440px){
-  #banner{ background: url(../images/banner-1438.jpg) no-repeat top center; height: 550px; background-size: contain;}
+  #banner{ background: url(../images/banner-1438.jpg) no-repeat top center; height: 550px; background-size: auto;}
   p.banner-text-one{ font-size: 34px; }
   p.banner-text-two{ font-size: 52px; padding: 12px 0 25px;}
   p.banner-text-three{ font-size: 25px; line-height: 35px;}
@@ -566,7 +566,7 @@ ul.flag-locations li{
   .company{ padding-top: 45px; }
   .company.supply, .company.tools{ margin: 0 10px 0 0; }
   .company.rentals, .company.energy{ margin: 0 0 0 10px; }
-  #banner{ background: url(../images/banner-959.jpg) no-repeat top center; height: 310px; padding: 50px 15px 0;}
+  #banner{ background: url(../images/banner-959.jpg) no-repeat top center; height: 370px; padding: 50px 15px 0;}
   p.banner-text-one{ font-size: 32px; }
   p.banner-text-two{ font-size: 48px; padding: 12px 0 25px;}
   p.banner-text-three{ font-size: 23px; line-height: 35px;}
@@ -607,7 +607,7 @@ ul.flag-locations li{
   #locations-banner{ background: url(../images/locations-banner-480.jpg) no-repeat top center; }
   #contact-banner{ background: url(../images/contact-banner-480.jpg) no-repeat top center; }
   #companies-banner, #managment-banner, #locations-banner, #contact-banner{ height: 360px; }
-  #banner{ padding: 45px 5px 0;}
+  #banner{ padding: 45px 5px 0; height: 370px}
   #banner p{text-align: center;}
   p.banner-text-one{ font-size: 18px; }
   p.banner-text-two{ font-size: 32px; padding: 0 0 10px; line-height: 45px;}
