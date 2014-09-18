@@ -11,18 +11,26 @@ $(function(){
 	window.onscroll = function (e) {
 
 	var height = $( 'body' ).height();
-	console.log('height', height);
+	// console.log('height', height);
 
 	var pos = $(document).scrollTop();
-	console.log('pos', pos);
+	// console.log('pos', pos);
 
-	var width = $( '#bar-test' ).width();
-	console.log('width', width);
+	var width = $('#bar-test').width();
+	// console.log('width', width);
 
-	var leftPos = (pos * width) / height;
-	console.log(leftPos);
+	var barWidth = $('.bar').width();
 
-		$('.bar').css("left", leftPos);
+	var maxLeft = width - barWidth;
+
+	// if(pos >= 555){
+		var leftPos = (pos * width) / height;
+		console.log(leftPos);
+
+		if(leftPos < maxLeft)
+			$('.bar').css("left", leftPos);
+
+	// }
 
 	};
 

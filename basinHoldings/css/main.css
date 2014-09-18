@@ -26,17 +26,17 @@ grey: dddcdc
 
 
 #bar-test{
-  margin-top: 10px;
+/*  margin-top: 10px;*/
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: #dddcdc;
 }
 
 .bar{
   position: relative;
   left: 0;
-  width: 20px;
-  height: 4px;
+  width: 110px;
+  height: 3px;
   background: #701e1a;
 }
 
@@ -136,7 +136,7 @@ header{
 }*/
 
 .desktop-header nav ul{
-  width: 759px;
+  width: 724px;
   margin: 0 auto;
   text-align: center;
 
@@ -145,7 +145,7 @@ header{
 .desktop-header nav li{
   text-align: center;
   padding: 0 25px 1px;
-  border-bottom: 3px solid #dddcdc;
+  /*border-bottom: 3px solid #dddcdc;*/
   -webkit-transition:all .5s ease-in-out;
   -moz-transition:all .5s ease-in-out;
   -o-transition:all .5s ease-in-out;
@@ -153,7 +153,7 @@ header{
 }
 
 .desktop-header nav li:hover{
-  border-bottom: 3px solid #701e1a;
+ /* border-bottom: 3px solid #701e1a;*/
   -webkit-transition:all .5s ease-in-out;
   -moz-transition:all .5s ease-in-out;
   -o-transition:all .5s ease-in-out;
@@ -161,7 +161,7 @@ header{
 }
 
 .desktop-header li.active{
-  border-bottom: 3px solid #701e1a;
+  /*border-bottom: 3px solid #701e1a;*/
 }
 
 .desktop-header nav a{
