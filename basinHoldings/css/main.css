@@ -56,7 +56,7 @@ p:last-child{
   padding: 0;
 }
 
-a{
+a, a:active, a:visited, a:link{
   color: #701e1a;
   text-decoration: none;
   -webkit-transition:all .3s ease-in-out;
@@ -579,7 +579,7 @@ ul.flag-locations li{
   #locations-banner{ background: url(../images/locations-banner-480.jpg) no-repeat top center; }
   #contact-banner{ background: url(../images/contact-banner-480.jpg) no-repeat top center; }
   #companies-banner, #managment-banner, #locations-banner, #contact-banner{ height: 360px; }
-  #banner{ padding: 40px 5px 0;}
+  #banner{ padding: 45px 5px 0;}
   #banner p{text-align: center;}
   p.banner-text-one{ font-size: 18px; }
   p.banner-text-two{ font-size: 32px; padding: 0 0 10px; line-height: 45px;}
