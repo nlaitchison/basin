@@ -23,6 +23,16 @@ $(function(){
 		}
 	);
 
+	$(".mobile-header nav li a").click(
+		function() {
+			console.log('nav');
+			if(menuOpen){
+				$(".mobile-header nav").removeClass( "open" );
+				menuOpen = false;
+			}
+		}
+	);
+
 	// Companies Hover Effects
 
 	$(".company.supply").hover(

@@ -221,9 +221,13 @@ header{
 
 .mobile-header nav li{
   width: 100%;
-  padding: 15px 0;
+  padding: 6px 0;
   text-align: center;
   border-bottom: 3px solid #dddcdc;
+}
+
+.mobile-header nav li a{
+  width: 100%;
 }
 
 .mobile-header nav li.active a{
