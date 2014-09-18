@@ -534,15 +534,15 @@ ul.flag-locations li{
 .four-4{ width: 100%; }
 
 @media only screen and (max-width: 1440px){
-  #banner{ background: url(../images/banner-1438.jpg) no-repeat top center; height: 580px; }
+  #banner{ background: url(../images/banner-1438.jpg) no-repeat top center; height: 580px; background-size: contain;}
   p.banner-text-one{ font-size: 34px; }
   p.banner-text-two{ font-size: 52px; padding: 12px 0 25px;}
   p.banner-text-three{ font-size: 25px; line-height: 35px;}
   #flag-container{ width: 94.67%;}
-  #companies-banner{ background: url(../images/companies-banner-1438.jpg) no-repeat top center; }
-  #managment-banner{ background: url(../images/managment-banner-1438.jpg) no-repeat top center; }
-  #locations-banner{ background: url(../images/locations-banner-1438.jpg) no-repeat top center; }
-  #contact-banner{ background: url(../images/contact-banner-1438.jpg) no-repeat top center; }
+  #companies-banner{ background: url(../images/companies-banner-1438.jpg) no-repeat top center; background-size: contain; }
+  #managment-banner{ background: url(../images/managment-banner-1438.jpg) no-repeat top center; background-size: contain;}
+  #locations-banner{ background: url(../images/locations-banner-1438.jpg) no-repeat top center; background-size: contain;}
+  #contact-banner{ background: url(../images/contact-banner-1438.jpg) no-repeat top center; background-size: contain;}
   #companies-banner, #managment-banner, #locations-banner, #contact-banner{ height: 380px; }
 }
 
