@@ -555,7 +555,7 @@ ul.flag-locations li{
   .right{ padding: 30px 0 0 0; }
   h2{ padding: 25px 0 20px; }
   .company-logo{ padding: 20px 60px 40px;}
-  .desktop-header nav ul{ float: right; }
+  .desktop-header nav ul{ float: right; width: 585;}
   .companies-container { padding-top: 0; }
   .company{ padding-top: 25px; }
   .company.supply, .company.tools{ margin: 0 10px 0 0; }
