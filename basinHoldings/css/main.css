@@ -238,8 +238,7 @@ header{
   width: 100%;
   padding: 6px 0;
   text-align: center;
-  /*border-bottom: 3px solid #dddcdc;*/
-  border-bottom: 3px solid #701e1a;
+  border-bottom: 3px solid #dddcdc;
 }
 
 .mobile-header nav li a{
