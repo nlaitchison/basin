@@ -362,8 +362,8 @@ section#companies{
 }
 
 .locations-map{
-  box-sizing: border-box;
-  padding-right: 15px;
+/*  box-sizing: border-box;
+  padding-right: 15px;*/
 }
 
 .locations-map img{
