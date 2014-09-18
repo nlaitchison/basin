@@ -2,45 +2,31 @@ $(function(){
 
 	console.log('running');
 
-	// NAVIGATION CURRENT
+	// NAVIGATION PAGE POSITION BAR
 
-	// $(".company-link").addClass( "active" );
-
-
-
+	// when the user is scrolling
 	window.onscroll = function (e) {
 
-	var height = $( 'body' ).height();
-	// console.log('height', height);
+		// get the page height
+		var height = $( 'body' ).height();
+		// console.log('height', height);
 
-	var pos = $(document).scrollTop();
-	// console.log('pos', pos);
+		// get the position the user has scrolled too
+		var pos = $(document).scrollTop();
+		// console.log('pos', pos);
 
-	var width = $('#bar-test').width();
-	// console.log('width', width);
+		// get the size of the nav bar
+		var width = $('#bar-container').width();
+		// console.log('width', width);
 
-	var barWidth = $('.bar').width();
-
-	var maxLeft = width - barWidth;
-
-	// if(pos >= 555){
+		// calculate the width of the red bar
 		var leftPos = (pos * width) / height;
 		console.log(leftPos);
 
-		// if(leftPos < maxLeft+10)
-			$('.bar').css("width", leftPos+55);
-
-			if(pos == height){
-				$('.bar').css("width", width);
-			}
-
-	// }
+		// adjust the width of the bar
+		$('.bar').css("width", leftPos);
 
 	};
-
-
-
-
 
 	var menuOpen = false;
 

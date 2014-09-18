@@ -159,7 +159,7 @@ header{
   color: #404040;
 }
 
-#bar-test{
+#bar-container{
   margin-top: -5px;
   width: 100%;
   height: 3px;
@@ -170,7 +170,7 @@ header{
 .bar{
   position: relative;
   left: 0;
-  width: 110px;
+  width: 0;
   height: 3px;
   background: #701e1a;
 }
@@ -307,16 +307,8 @@ p.banner-text-three{
   #contact-banner{ background: url(../images/contact-banner-1438.jpg) no-repeat top center; background-size: 100%;}
   #companies-banner, #managment-banner, #locations-banner, #contact-banner{ height: 450px; }
 
-/*#companies-banner{
-  background: url(../images/companies-banner.jpg) no-repeat top center;
-  height: 450px;
-}*/
 
 /* Companies --------------------------------------*/
-
-section#companies{
-  /*padding-bottom: 95px;*/
-}
 
 .companies-container{
   padding-top: 10px;
@@ -387,27 +379,11 @@ section#companies{
 
 /* Locations --------------------------------------*/
 
-#locations p{
-/*  box-sizing: border-box;
-  padding: 0 0 10px 15px;*/
-}
-
-.locations-map{
-/*  box-sizing: border-box;
-  padding-right: 15px;*/
-}
-
 .locations-map img{
   width: 100%;
 }
 
 /* Contact --------------------------------------*/
-
-
-form{
-/*    padding-right: 15px;
-    box-sizing: border-box;*/
-}
 
 .form-input{
   height: 45px;
@@ -450,10 +426,6 @@ input#contact-submit{
   float: right;
   margin: 10px 0 0;
   padding: 8px;
-}
-
-#contact p{
-/*  padding: 0 0 0 15px;*/
 }
 
 /* Footer --------------------------------------*/
@@ -503,7 +475,6 @@ ul.flag-locations li{
   width: 73.68%; /*1050px*/
   max-width: 73.68%;
   min-width: 300px;
-  /*min-width: 750px;*/
   margin: 0 auto;
   clear: both;
 }
@@ -538,7 +509,7 @@ ul.flag-locations li{
   p.banner-text-one{ font-size: 34px; }
   p.banner-text-two{ font-size: 52px; padding: 12px 0 25px;}
   p.banner-text-three{ font-size: 25px; line-height: 35px;}
-  #flag-container{ width: 94.67%;}
+  #flag-container{ width: 95.6%;}
   #companies-banner{ background: url(../images/companies-banner-1438.jpg) no-repeat top center; background-size: auto;}
   #managment-banner{ background: url(../images/managment-banner-1438.jpg) no-repeat top center; background-size: auto;}
   #locations-banner{ background: url(../images/locations-banner-1438.jpg) no-repeat top center; background-size: auto;}
