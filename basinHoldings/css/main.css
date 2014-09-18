@@ -543,8 +543,10 @@ ul.flag-locations li{
   .company{ padding-top: 25px; }
   .company.supply, .company.tools{ margin: 0 10px 0 0; }
   .company.rentals, .company.energy{ margin: 0 0 0 10px; }
-/*  #banner{background-size: 150%;}*/
- #banner{ background: url(../images/banner-959.jpg) no-repeat top center; height: 360px;}
+  #banner{ background: url(../images/banner-959.jpg) no-repeat top center; height: 360px; padding: 50px 15px 0 0}
+  p.banner-text-one{ font-size: 32px; }
+  p.banner-text-two{ font-size: 50px; padding: 12px 0 25px;}
+  p.banner-text-three{ font-size: 23px; line-height: 35px;}
 }
 
 @media only screen and (max-width: 767px) {
