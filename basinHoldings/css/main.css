@@ -121,7 +121,7 @@ header{
 }*/
 
 .desktop-header nav ul{
-  width: 728px;
+  width: 737px;
   margin: 0 auto;
   text-align: center;
 
@@ -472,7 +472,7 @@ ul.flag-locations li{
 
 .container{
   width: 73.68%; /*1050px*/
-  max-width: 73.68%;
+  max-width: 1200px;
   min-width: 300px;
   margin: 0 auto;
   clear: both;
@@ -504,6 +504,7 @@ ul.flag-locations li{
 .four-4{ width: 100%; }
 
 @media only screen and (max-width: 1440px){
+  .desktop-header nav ul{width: 728px;}
   #banner{ background: url(../images/banner-1438.jpg) no-repeat top center; height: 550px; background-size: auto;}
   p.banner-text-one{ font-size: 34px; }
   p.banner-text-two{ font-size: 52px; padding: 12px 0 25px;}
