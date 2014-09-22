@@ -5,17 +5,27 @@ $(function(){
 
 	// FOOTER CONTACTS
 
-	$.get('contacts-template.html', function(htmlArg){
+	$(".flag").click(
+		function(event) {
+			console.log('flag', this.id);
 
-		console.log('get');
+			var country = '#'+this.id;
 
-		var source = $(htmlArg).find('#united-states').html();
-		var template = Handlebars.compile(source);
-		var context = {title: "My New Post", body: "This is my first post!"}
-		var html = template(context);
-		$("#contacts-container").append(html);
+			$.get('contacts-template.html', function(htmlArg){
 
-	});
+				console.log('get');
+
+				$("#contacts-container").empty();
+
+				var source = $(htmlArg).find(country).html();
+				var template = Handlebars.compile(source);
+				var context = {title: "My New Post", body: "This is my first post!"}
+				var html = template(context);
+				$("#contacts-container").append(html);
+
+			});
+		}
+	);
 
 	// NAVIGATION PAGE POSITION BAR
 
