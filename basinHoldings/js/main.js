@@ -3,6 +3,22 @@ $(function(){
 	console.log('running');
 
 
+	// FOOTER CONTACTS
+
+	$.get('contacts-template.html', function(htmlArg){
+
+		console.log('get');
+
+		$("#main_content").append(h2);
+
+		var source = $(htmlArg).find('#united-states').html();
+		var template = Handlebars.compile(source);
+		var context = {title: "My New Post", body: "This is my first post!"}
+		var html = template(context);
+		$("#contacts-container").append(html);
+
+	});
+
 	// NAVIGATION PAGE POSITION BAR
 
 	// when the user is scrolling

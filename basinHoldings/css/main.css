@@ -458,6 +458,24 @@ ul.flag-locations li{
   text-align: center;
 }
 
+#contacts-container{
+  margin: 15px 0 0;
+  padding: 25px 0 0;
+  border-top: 1px solid #ccc;
+}
+
+ul.footer-contact {
+  box-sizing: border-box;
+  height: 170px;
+  padding: 0 20px;
+  margin: 0 auto 10px;
+}
+
+.footer-contact li{
+  float: none;
+  line-height: 17px;
+}
+
 /* ---------------------------------------------------------------------------------------------------
     ∆ Grid & Queries
 ---------------------------------------------------------------------------------------------------*/
