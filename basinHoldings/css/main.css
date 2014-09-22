@@ -58,7 +58,7 @@ p:last-child{
 
 a, a:active, a:visited, a:link{
   color: #701e1a;
-  text-decoration: none;
+  /*text-decoration: none;*/
   -webkit-transition:all .3s ease-in-out;
   -moz-transition:all .3s ease-in-out;
   -o-transition:all .3s ease-in-out;
@@ -115,10 +115,9 @@ header{
   padding-top: 5px;
 }
 
-/*nav{
-  width: 90.47%;
-  float: right;
-}*/
+nav a{
+  text-decoration: none;
+}
 
 .desktop-header nav ul{
   width: 737px;
@@ -274,7 +273,7 @@ header{
   background: url(../images/banner-1438.jpg) no-repeat top center;
   background-size: 100%;
   height: 550px;
-  margin-top: 0;
+  margin: 0;
   padding: 60px 50px 0 0;
 }
 
@@ -285,19 +284,21 @@ header{
 }
 
 p.banner-text-one{
-  font-size: 26px;
+  font-size: 34px;
   font-style: italic;
 }
 
 p.banner-text-two{
-  font-size: 46px;
+  font-size: 54px;
   font-weight: bold;
   padding-top: 3px;
+  padding: 12px 0 25px;
 }
 
 p.banner-text-three{
-  font-size: 19px;
+  font-size: 25px;
   line-height: 28px;
+  line-height: 35px;
 }
 
   #companies-banner{ background: url(../images/companies-banner-1438.jpg) no-repeat top center; background-size: 100%;}
@@ -462,7 +463,6 @@ ul.flag-locations li{
 ---------------------------------------------------------------------------------------------------*/
 
 .main-container{
-  max-width: 2000px;
   margin-top: 70px;
 }
 
@@ -472,7 +472,7 @@ ul.flag-locations li{
 
 .container{
   width: 73.68%; /*1050px*/
-  max-width: 1200px;
+  max-width: 1400px;
   min-width: 300px;
   margin: 0 auto;
   clear: both;
@@ -502,6 +502,18 @@ ul.flag-locations li{
 .two-4{ width: 50%; }
 .three-4{ width: 75%; }
 .four-4{ width: 100%; }
+
+@media only screen and (min-width: 1440px){
+  header{ background-color: #fff;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);}
+  .desktop-header{ width: 1400px; margin: 0 auto; box-shadow: none;}
+  .banner-container{ width: 1400px; margin: 0 auto; }
+  #companies-banner, #managment-banner, #locations-banner, #contact-banner{ height: 500px; background-size: contain; }
+  #banner{background-size: cover; height: 780px;}
+  section { margin: 0 0 100px; }
+}
 
 @media only screen and (max-width: 1440px){
   .desktop-header nav ul{width: 728px;}
