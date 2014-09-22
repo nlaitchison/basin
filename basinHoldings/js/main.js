@@ -46,7 +46,7 @@ $(function(){
 
 		// calculate the width of the red bar
 		var leftPos = (pos * (width+120)) / height;
-		console.log(leftPos);
+		// console.log(leftPos);
 
 		// adjust the width of the bar
 		$('.bar').css("width", leftPos);
