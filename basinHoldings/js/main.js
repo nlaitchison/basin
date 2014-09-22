@@ -9,8 +9,6 @@ $(function(){
 
 		console.log('get');
 
-		$("#main_content").append(h2);
-
 		var source = $(htmlArg).find('#united-states').html();
 		var template = Handlebars.compile(source);
 		var context = {title: "My New Post", body: "This is my first post!"}
