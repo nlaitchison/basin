@@ -597,6 +597,7 @@ ul.footer-contact {
   p.banner-text-one{ font-size: 26px; }
   p.banner-text-two{ font-size: 42px; padding: 2px 0 12px; line-height: 48px;}
   p.banner-text-three{ font-size: 18px; line-height: 26px;}
+  ul.footer-contact { height: 185px; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -618,6 +619,7 @@ ul.footer-contact {
   p.banner-text-one{ font-size: 18px; }
   p.banner-text-two{ font-size: 32px; padding: 0 0 10px; line-height: 45px;}
   p.banner-text-three{ font-size: 14px; line-height: 22px;}
+  ul.footer-contact { height: 175px; }
   /*#banner{ background-size: 180%; height: 200px; }*/
 }
 
