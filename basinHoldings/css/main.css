@@ -534,7 +534,7 @@ ul.footer-contact {
   .desktop-header{ width: 1400px; margin: 0 auto; box-shadow: none;}
   .banner-container{ width: 1400px; margin: 0 auto; }
   #companies-banner, #managment-banner, #locations-banner, #contact-banner{ height: 500px; background-size: contain; }
-  #banner{background-size: cover; height: 780px;}
+  #banner{background-size: contain; height: 780px;}
   section { margin: 0 0 100px; }
 }
 
