@@ -2,9 +2,99 @@ $(function(){
 
 	console.log('running');
 
-	// NAVIGATION CURRENT
 
-	// $(".company-link").addClass( "active" );
+	// FOOTER CONTACTS
+
+	$(".flag").click(
+		function(event) {
+			console.log('flag', this.id);
+
+			var country = '#'+this.id;
+
+			$.get('contacts-template.html', function(htmlArg){
+
+				console.log('get');
+
+				$("#contacts-container").empty();
+
+				var source = $(htmlArg).find(country).html();
+				var template = Handlebars.compile(source);
+				var context = {title: "My New Post", body: "This is my first post!"}
+				var html = template(context);
+				$("#contacts-container").append(html);
+
+			});
+		}
+	);
+
+	// NAVIGATION PAGE POSITION BAR
+
+	// when the user is scrolling
+	window.onscroll = function (e) {
+
+		// get the page height
+		var height = $( 'body' ).height();
+		// console.log('height', height);
+
+		// get the position the user has scrolled too
+		var pos = $(document).scrollTop();
+		// console.log('pos', pos);
+
+		// get the size of the nav bar
+		var width = $('#bar-container').width();
+		// console.log('width', width);
+
+		// calculate the width of the red bar
+		var leftPos = (pos * (width+120)) / height;
+		// console.log(leftPos);
+
+		// adjust the width of the bar
+		$('.bar').css("width", leftPos);
+
+	};
+
+
+	// MENU FUNCTIONS
+
+	// var to check if menu is open
+	var menuOpen = false;
+
+	// when the menu btn is clicked
+	$("#menu-btn").click(
+		function() {
+			console.log('click');
+			// check to see if it's open
+			if(!menuOpen){
+				// if it is, open the menu
+				$(".mobile-header nav").addClass( "open" );
+				// set var
+				menuOpen = true;
+			}
+			// if not
+			else if(menuOpen){
+				// close the menu
+				$(".mobile-header nav").removeClass( "open" );
+				// set var
+				menuOpen = false;
+			}
+
+		}
+	);
+
+	// when an option in the mobile/collapsing nav is clicked
+	$(".mobile-header nav li a").click(
+		function() {
+			console.log('nav');
+			// make sure the menu is actually open
+			if(menuOpen){
+				// then close the menu
+				$(".mobile-header nav").removeClass( "open" );
+				// set var
+				menuOpen = false;
+			}
+		}
+	);
+
 
 	// Companies Hover Effects
 

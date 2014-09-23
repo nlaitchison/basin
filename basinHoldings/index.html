@@ -3,6 +3,14 @@
 	<head>
 		<title>Basin Holdings</title>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+		<!--[if lt IE 9]>
+			<script src="dist/html5shiv.js"></script>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
 
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -21,13 +29,17 @@
 					</div>
 					<nav>
 						<ul>
-							<li class="active about-link"><a href="#banner">About Us</a></li>
+							<li class="about-link"><a href="#banner">About Us</a></li>
 							<li class="company-link"><a href="#companies-banner">Our Companies</a></li>
 							<li class="managment-link"><a href="#managment-banner">Our Managment</a></li>
 							<li class="locations-link"><a href="#locations-banner">Our Locations</a></li>
 							<li class="contact-link"><a href="#contact-banner">Contact Us</a></li>
 							<div class="clear-fix"></div>
+							<div id="bar-container">
+								<div class="bar"></div>
+							</div>
 						</ul>
+						<div class="clear-fix"></div>
 					</nav>
 				</div>
 				<div class="mobile-header">
@@ -35,14 +47,18 @@
 						<div id="logo">
 							<a href="#banner"><img src="images/basin-holdings-logo.png" alt="Basin Holdings Logo"></a>
 						</div>
+						<div id="menu-btn">
+							<img src="images/menu-btn.gif">
+						</div>
+						<div class="clear-fix"></div>
 					</div>
 					<nav>
 						<ul>
-							<li class="active about-link"><a href="#banner">About Us</a></li>
-							<li class="company-link"><a href="#companies-banner">Our Companies</a></li>
-							<li class="managment-link"><a href="#managment-banner">Our Managment</a></li>
-							<li class="locations-link"><a href="#locations-banner">Our Locations</a></li>
-							<li class="contact-link"><a href="#contact-banner">Contact Us</a></li>
+							<li class="about-link"><a href="#about">About Us</a></li>
+							<li class="company-link"><a href="#companies">Our Companies</a></li>
+							<li class="managment-link"><a href="#managment">Our Managment</a></li>
+							<li class="locations-link"><a href="#locations">Our Locations</a></li>
+							<li class="contact-link"><a href="#contact">Contact Us</a></li>
 							<div class="clear-fix"></div>
 						</ul>
 					</nav>
@@ -51,11 +67,13 @@
 
 			<div class="main-container">
 
-				<div id="banner">
-					<p class="banner-text-one"> A Global Integrated Oilfield </p>
-					<p class="banner-text-two"> Supply &amp; Services Company </p>
-					<p class="banner-text-three"> We own and operate businesses in four key oilfield sectors<br>around the world; manufacturing, services,<br>rentals, and equipment supply.</p>
-				</div>
+				<section id="banner">
+					<div class="banner-container">
+						<p class="banner-text-one"> A Global Integrated Oilfield </p>
+						<p class="banner-text-two"> Supply &amp; Services Company </p>
+						<p class="banner-text-three"> We own and operate businesses in four key oilfield sectors<br>around the world; manufacturing, services,<br>rentals, and equipment supply.</p>
+					</div>
+				</section>
 
 				<section id="about">
 					<div class="container">
@@ -68,7 +86,7 @@
 				</section> <!-- end about -->
 
 				<div id="companies-banner" class="img-divider">
-					<img src="images/companies-banner.jpg">
+					<!-- <img src="images/companies-banner.jpg"> -->
 				</div>
 
 				<section id="companies">
@@ -77,35 +95,37 @@
 							<img src="images/companies-icon.gif">
 						</div>
 						<h2> Our Companies </h2>
-						<div class="column one-4">
-							<div class="company supply">
-								<div class="company-logo"><img src="images/basin-supply-logo.png"></div>
-								<div class="company-text">
-									<p><a href="#">Basin Rentals</a> provides diversified oilfield &amp; industrial equipment rentals to customers in North America, Russia, the Middle East, Africa, and Latin America.</p>
+						<div class="companies-container">
+							<div class="column one-4">
+								<div class="company supply">
+									<div class="company-logo"><img src="images/basin-supply-logo.png"></div>
+									<div class="company-text">
+										<p><a href="#">Basin Supply</a> serves customers in the emerging and developed oilfield markets, providing integrated equipment sales &amp; distribution, procurement, and logistics management around the globe.</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="column one-4">
-							<div class="company rentals">
-								<div class="company-logo"><img src="images/basin-rentals-logo.png"></div>
-								<div class="company-text">
-									<p><a href="#">Basin Rentals</a> provides diversified oilfield &amp; industrial equipment rentals to customers in North America, Russia, the Middle East, Africa, and Latin America.</p>
+							<div class="column one-4">
+								<div class="company rentals">
+									<div class="company-logo"><img src="images/basin-rentals-logo.png"></div>
+									<div class="company-text">
+										<p><a href="#">Basin Rentals</a> provides diversified oilfield &amp; industrial equipment rentals to customers in North America, Russia, the Middle East, Africa, and Latin America.</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="column one-4">
-							<div class="company tools">
-								<div class="company-logo"><img src="images/basin-tools-logo.png"></div>
-								<div class="company-text">
-									<p><a href="#">Basin Rentals</a> provides diversified oilfield &amp; industrial equipment rentals to customers in North America, Russia, the Middle East, Africa, and Latin America.</p>
+							<div class="column one-4">
+								<div class="company tools">
+									<div class="company-logo"><img src="images/basin-tools-logo.png"></div>
+									<div class="company-text">
+										<p><a href="#">Basin Tools</a> is a portfolio of equipment manufacturers providing advanced oilfield equipment and technology to North American and international customers.</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="column one-4">
-							<div class="company energy">
-								<div class="company-logo"><img src="images/basin-energy-logo.png"></div>
-								<div class="company-text">
-									<p><a href="#">Basin Rentals</a> provides diversified oilfield &amp; industrial equipment rentals to customers in North America, Russia, the Middle East, Africa, and Latin America.</p>
+							<div class="column one-4">
+								<div class="company energy">
+									<div class="company-logo"><img src="images/basin-energy-logo.png"></div>
+									<div class="company-text">
+										<p><a href="#">Basin Energy Services</a> is a global, diversified oilfield services platform comprised of companies focused on drilling &amp; measurement, wireline &amp; slickline services, well completion &amp; production and artificial lift.</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -114,7 +134,7 @@
 				</section> <!-- end companies -->
 
 				<div id="managment-banner" class="img-divider">
-					<img src="images/managment-banner.jpg">
+					<!-- <img src="images/managment-banner.jpg"> -->
 				</div>
 
 				<section id="managment">
@@ -129,7 +149,7 @@
 				</section> <!-- end managment -->
 
 				<div id="locations-banner" class="img-divider">
-					<img src="images/locations-banner.jpg">
+					<!-- <img src="images/locations-banner.jpg"> -->
 				</div>
 
 				<section id="locations">
@@ -139,7 +159,7 @@
 						</div>
 						<h2> Our Locations </h2>
 						<div class="sub-container">
-							<div class="locations-map column four-6">
+							<div class="locations-map column four-6 left">
 								<img src="images/locations-map.png">
 							</div>
 							<div class="column two-6 right">
@@ -152,7 +172,7 @@
 				</section> <!-- end locations -->
 
 				<div id="contact-banner" class="img-divider">
-					<img src="images/contact-banner.jpg">
+					<!-- <img src="images/contact-banner.jpg"> -->
 				</div>
 
 				<section id="contact">
@@ -205,7 +225,7 @@
 					<p class="center-text"> 405 Lexington Avenue  |  The Chrysler Building, 71st Floor New York, NY10174  |  tel: +1-212-695-7376  |  fax:+1-212-202-5208  |  info@basinholdings.com </p>
 					<p class="center-text"> &copy; 2014 Basin Holdings US LLC.  All Rights Reserved.   <a href="#">Terms of Use</a> |  <a href="#">Privacy Policy</a>  |  <a href="#">Employee Login</a>  |  <a href="#">Investor Login</a>   </p>
 					<div id="flag-container">
-						<div class="flag">
+						<div id="united-states" class="flag">
 							<img src="images/flags/us.png">
 							<ul class='flag-locations'>
 								<li>Houston</li>
@@ -213,57 +233,57 @@
 								<li>New York</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="canada" class="flag">
 							<img src="images/flags/canada.png">
 							<ul class='flag-locations'>
 								<li>Calgary</li>
 								<li>Edmonton</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="uk" class="flag">
 							<img src="images/flags/england.png">
 							<ul class='flag-locations'>
 								<li>London</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="columbia"  class="flag">
 							<img src="images/flags/bogota.png">
 							<ul class='flag-locations'>
 								<li>Bogota</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="peru" class="flag">
 							<img src="images/flags/lima.png">
 							<ul class='flag-locations'>
 								<li>Lima</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="uae" class="flag">
 							<img src="images/flags/dubai.png">
 							<ul class='flag-locations'>
 								<li>Dubai</li>
 								<li>Abu Dhabi</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="oman" class="flag">
 							<img src="images/flags/muscat.png">
 							<ul class='flag-locations'>
 								<li>Muscat</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="ecuador" class="flag">
 							<img src="images/flags/quito.png">
 							<ul class='flag-locations'>
 								<li>Quito</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="kuwait" class="flag">
 							<img src="images/flags/kuwait.png">
 							<ul class='flag-locations'>
 								<li>Kuwait City</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="russia" class="flag">
 							<img src="images/flags/moscow.png">
 							<ul class='flag-locations'>
 								<li>Moscow</li>
@@ -272,43 +292,43 @@
 								<li>Sakhalin</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="atyrau" class="flag">
 							<img src="images/flags/atyrau.png">
 							<ul class='flag-locations'>
 								<li>Atyrau</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="china" class="flag">
 							<img src="images/flags/china.png">
 							<ul class='flag-locations'>
 								<li>Shanghai</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="india" class="flag">
 							<img src="images/flags/mumbai.png">
 							<ul class='flag-locations'>
 								<li>Mumbai</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="chile" class="flag">
 							<img src="images/flags/santiago.png">
 							<ul class='flag-locations'>
 								<li>Santiago</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="kenya" class="flag">
 							<img src="images/flags/nairobi.png">
 							<ul class='flag-locations'>
 								<li>Nairobi</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="germany" class="flag">
 							<img src="images/flags/celle.png">
 							<ul class='flag-locations'>
 								<li>Celle</li>
 							</ul>
 						</div>
-						<div class="flag">
+						<div id="mexico" class="flag">
 							<img src="images/flags/mexico.png">
 							<ul class='flag-locations'>
 								<li>Mexico City</li>
@@ -317,12 +337,17 @@
 						</div>
 						<div class="clear-fix"> </div>
 					</div>
+					<div id="contacts-container">
+
+					</div>
+					<div class="clear-fix"></div>
 				</div>
 			</footer>
 
 		</div> <!-- end wrapper -->
-		<!-- CSS -->
+		<!-- JS -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/handlebars-v2.0.0.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
