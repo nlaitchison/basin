@@ -452,6 +452,20 @@ footer p{
   float: left;
   padding: 0 2px;
   cursor: pointer;
+
+  -webkit-transition:all .6s ease-in-out;
+  -moz-transition:all .6s ease-in-out;
+  -o-transition:all .6s ease-in-out;
+  transition:all .6s ease-in-out;
+}
+
+.flag:hover{
+  opacity: .5;
+
+  -webkit-transition:all .6s ease-in-out;
+  -moz-transition:all .6s ease-in-out;
+  -o-transition:all .6s ease-in-out;
+  transition:all .6s ease-in-out;
 }
 
 ul.flag-locations li{
