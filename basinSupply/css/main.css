@@ -1,0 +1,277 @@
+/* ---------------------------------------------------------------------------------------------------
+
+-----Info
+
+Designer & Developer: Nicole Aitchison
+Company: Basin Supply
+
+-----Color Swatch
+
+font grey: 404040
+font red: 701e1a
+grey: dddcdc
+
+-----Sections
+
+∆ General
+∆ Grid & Queries
+
+
+----------------------------------------------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ General
+---------------------------------------------------------------------------------------------------*/
+
+
+html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font: 14px Helvetica, sans-serif;
+  color: #404040;
+}
+
+section{
+  padding: 50px 0;
+}
+
+h2, h3{
+  text-align: center;
+  font: 26px'Libre Baskerville', serif;
+  color: #701e1a;
+}
+h2{
+  text-transform: uppercase;
+  line-height: 42px;
+}
+
+h3{
+  font-size: 20px;
+  font-style: italic;
+}
+
+p{
+  padding: 0 0 25px;
+}
+
+p:last-child{
+  padding: 0;
+}
+
+a{
+  color: #701e1a;
+  /*text-decoration: none;*/
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+a:hover{
+  color: #404040;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	float: left;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.clear-fix{
+	clear: both;
+}
+
+.divider{
+  width: 100%;
+  min-height: 1px;
+  max-height: 1px;
+  background-color: #E4E4E4;
+  margin: 25px 0;
+}
+
+/* Header --------------------------------------*/
+
+header{
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  background: #f0f0f0;
+  /*padding: 10px;*/
+  border-top: 3px solid #701e1a;
+  border-bottom: 1px solid #c8c8c8;
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.3);
+  z-index: 3;
+}
+
+nav li a{
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #505050;
+  text-decoration: none;
+}
+
+nav li.active, nav li:hover {
+  /*font-weight: bold;*/
+  background-color: #E2E2E2;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+nav ul{
+  float: right;
+}
+
+nav li{
+  padding: 10px 20px;
+  line-height: 35px;
+  border-left: 1px solid #c8c8c8;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+#logo{
+  float: left;
+  width: 96px;
+  height: 35px;
+  padding: 10px 20px;
+  border-right: 1px solid #c8c8c8;
+}
+
+/* Locations & Contact --------------------------------------*/
+
+#map{
+  background: url('../images/locations-bg.jpg') top center no-repeat;
+  height: 470px;
+  width: 100%;
+  background-size: cover;
+  padding: 0;
+  position: relative;
+  z-index: -3;
+}
+
+#map .dark img{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#map .light img{
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  top: -20px;
+}
+
+#locations{
+  -webkit-box-shadow: 0px -3px 12px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px -3px 12px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px -3px 12px 0px rgba(0,0,0,0.3);
+  background-color: #fff;
+}
+
+#locations ul.item li{
+  float: none;
+  padding-bottom: 5px;
+}
+
+#locations ul.item li img{
+  padding-right: 5px;
+}
+
+#locations p{
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------------------------------------------
+    ∆ Grid & Queries
+---------------------------------------------------------------------------------------------------*/
+
+.main-container{
+  /*margin-top: 70px;*/
+}
+
+.sub-container{
+  margin-top: 10px;
+}
+
+.container{
+  width: 92%; /* 73.68% 1050px*/
+  max-width: 1324px;
+  min-width: 300px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.column{
+  float: left;
+  box-sizing: border-box;
+  padding: 0 1%;
+  margin: 5px 0;
+}
+
+.left{
+  box-sizing: border-box;
+  padding-right: 15px;
+}
+
+.right{
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.one { width: 100%; }
+.two { width: 50%; }
+.three { width: 33.33%; }
+.two-three { width: 66.66%; }
+.four { width: 25%; }
+.five { width: 20%; }
+.six { width: 16.66%; }
+.twelve { width: 8.33%; }
+
+
+/*.one-6{width: 16.66%;}
+.two-6{width: 33.32%;}
+.three-6{width: 49.98%;}
+.four-6{width: 66.64%;}
+.five-6{width: 83.3%;}
+
+.one-4{ width: 25%; }
+.two-4{ width: 50%; }
+.three-4{ width: 75%; }
+.four-4{ width: 100%; }*/
+
+
+@media only screen and (max-width: 959px){
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+
+

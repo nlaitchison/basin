@@ -47,6 +47,13 @@ h2{
   padding: 38px 0 20px;
 }
 
+h3{
+  font: 18px'Libre Baskerville', serif;
+  color: #701e1a;
+  text-transform: uppercase;
+  padding: 0 0 10px;
+}
+
 p{
   line-height: 35px;
   padding: 0 0 10px;
@@ -249,6 +256,23 @@ nav a{
 /* color: #701e1a;*/
 }
 
+#breadcrumbs{
+  background: #eee;
+/*border-top: 3px solid #ddd;*/
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 70px;
+  font-size: 12px;
+}
+
+#breadcrumbs li{
+  padding-right: 8px;
+}
+
+#breadcrumbs a{
+    color: #404040;
+    text-decoration: none;
+}
 
 
 /* Sections --------------------------------------*/
@@ -426,6 +450,14 @@ input#contact-submit{
   float: right;
   margin: 10px 0 0;
   padding: 8px;
+}
+
+
+/* Company Page --------------------------------------*/
+
+#company-slider{
+  background: #ddd;
+  padding: 75px 0;
 }
 
 /* Footer --------------------------------------*/
