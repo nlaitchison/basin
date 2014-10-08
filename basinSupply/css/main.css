@@ -46,7 +46,8 @@ h2, h3{
 }
 h2{
   text-transform: uppercase;
-  line-height: 42px;
+  /*line-height: 42px;*/
+  padding-bottom: 8px;
 }
 
 h3{
@@ -166,20 +167,53 @@ nav li{
   background-size: cover;
   padding: 0;
   position: relative;
-  z-index: -3;
+  z-index: 1;
+    -webkit-box-shadow: inset 0px 5px 12px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0px -5px 12px 0px rgba(0,0,0,0.3);
+  box-shadow: inset 0px -5px 12px 0px rgba(0,0,0,0.3);
 }
 
-#map .dark img{
+/*#map .dark img{
   width: 100%;
   position: absolute;
   z-index: -1;
 }
 
-#map .light img{
-  width: 100%;
+#map .light{
   position: absolute;
-  z-index: -2;
-  top: -20px;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+}*/
+
+/*#map svg{
+  position: absolute;
+  z-index: 8;
+  left: 0;
+  width: 100%;
+}*/
+
+/*#map .light img{
+  width: 100%;
+}*/
+
+svg{
+  opacity: .82;
+}
+
+#africa:hover, #northAmerica:hover path, #southAmerica:hover, #russia:hover path, #asia:hover path, #middleEast:hover , #europe:hover path{
+  fill: #444;
+    -webkit-transition:all .6s ease-in-out;
+  -moz-transition:all .6s ease-in-out;
+  -o-transition:all .6s ease-in-out;
+  transition:all .6s ease-in-out;
+}
+
+#africa, #northAmerica path, #southAmerica, #russia path, #asia path, #middleEast , #europe path{
+    -webkit-transition:all .6s ease-in-out;
+  -moz-transition:all .6s ease-in-out;
+  -o-transition:all .6s ease-in-out;
+  transition:all .6s ease-in-out;
 }
 
 #locations{
@@ -200,6 +234,40 @@ nav li{
 
 #locations p{
   font-style: italic;
+}
+
+/* Footer --------------------------------------*/
+
+footer{
+  font-weight: lighter;
+}
+
+footer .top{
+  background-color: #efefef;
+  padding: 50px 0;
+}
+
+footer .top ul{
+  width: 550px;
+  margin: 0 auto;
+}
+
+footer .top ul li{
+  padding: 0 10px;
+}
+
+footer .bottom{
+  background-color: #404040;
+  font-size: 12px;
+  padding: 50px 0;
+}
+
+footer .bottom, footer .bottom a{
+  color: #d0d0d0;
+}
+
+footer p{
+  padding-bottom: 10px;
 }
 
 /* ---------------------------------------------------------------------------------------------------
