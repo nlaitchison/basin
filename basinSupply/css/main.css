@@ -225,6 +225,10 @@ g path.selected{
   background-color: #fff;
 }
 
+#locations ul.item{
+  height: 400px;
+}
+
 #locations ul.item li{
   float: none;
   padding-bottom: 5px;
