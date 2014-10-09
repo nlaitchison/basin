@@ -7,6 +7,7 @@ $(function(){
 
 	var gOld = '';
 	var gNew = '';
+	var loc = '';
 
 	$("g").click(function(event) {
 
@@ -17,7 +18,7 @@ $(function(){
 
 			if(gNew != gOld){
 
-				var loc = this.id;
+				loc = this.id;
 				$(gNew).attr("class", "selected");
 				$(gOld).attr("class", "");
 
