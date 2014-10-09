@@ -14,11 +14,13 @@ $(function(){
 		if(this.id != 'other' && this.id != ''){
 
 			gNew = '#'+this.id+' path';
-			console.log('old:', gOld,  'new:',this.id)
+			console.log('old:', gOld,  'new:',this.id);
+
+			loc = '#'+this.id;
+			console.log(loc);
 
 			if(gNew != gOld){
 
-				loc = '#'+this.id;
 				$(gNew).attr("class", "selected");
 				$(gOld).attr("class", "");
 
