@@ -3,19 +3,10 @@ $(function(){
 	console.log('running');
 
 
-	// FOOTER CONTACTS
+	// MAP HOVER
 
-	// $("path").click(
-	// 	function(event) {
-	// 		console.log('path', this.id);
-	// 		var path = '#'+this.id;
-	// 		$("path").attr("class", "selected");
-	// 	}
-	// );
-
-// var gSelected = false;
-var gOld = '';
-var gNew = '';
+	var gOld = '';
+	var gNew = '';
 
 	$("g").click(function(event) {
 
@@ -26,8 +17,24 @@ var gNew = '';
 
 			if(gNew != gOld){
 
+				var loc = this.id;
 				$(gNew).attr("class", "selected");
 				$(gOld).attr("class", "");
+
+				$.get('locations-template.html', function(htmlArg){
+
+					console.log('get');
+
+					$("#locations-container").empty();
+
+					var source = $(htmlArg).find(loc).html();
+					var template = Handlebars.compile(source);
+					var context = {title: "My New Post", body: "This is my first post!"}
+					var html = template(context);
+					$("#locations-container").append(html);
+
+				});
+
 				gOld = gNew;
 			}
 
