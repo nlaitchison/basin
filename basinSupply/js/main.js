@@ -18,7 +18,7 @@ $(function(){
 
 			if(gNew != gOld){
 
-				loc = this.id;
+				loc = '#'+this.id;
 				$(gNew).attr("class", "selected");
 				$(gOld).attr("class", "");
 
