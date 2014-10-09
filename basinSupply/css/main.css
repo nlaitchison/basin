@@ -31,7 +31,7 @@ html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,
 }
 
 body{
-	font: 14px Helvetica, sans-serif;
+	font: 14px/28px Helvetica, sans-serif;
   color: #404040;
 }
 
@@ -39,7 +39,7 @@ section{
   padding: 50px 0;
 }
 
-h2, h3{
+h2, h3, h4{
   text-align: center;
   font: 26px'Libre Baskerville', serif;
   color: #701e1a;
@@ -55,8 +55,15 @@ h3{
   font-style: italic;
 }
 
+h4{
+  font-size: 18px;
+  text-transform: uppercase;
+/*  padding: 0 0 10px;*/
+}
+
 p{
   padding: 0 0 25px;
+  text-align: justify;
 }
 
 p:last-child{
@@ -160,9 +167,21 @@ nav li{
 
 /* Locations & Contact --------------------------------------*/
 
+#services{
+  padding-top: 65px;
+}
+
+#services .item{
+  box-sizing: border-box;
+  /*background-color: #EFEFEF;*/
+  padding: 35px 35px;
+}
+
+/* Locations & Contact --------------------------------------*/
+
 #map{
   background: url('../images/locations-bg.jpg') top center no-repeat;
-  height: 470px;
+  height: 455px;
   width: 100%;
   background-size: cover;
   padding: 0;

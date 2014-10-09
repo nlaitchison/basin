@@ -5,9 +5,25 @@ $(function(){
 
 	// MAP HOVER
 
-	var gOld = '';
-	var gNew = '';
-	var loc = '';
+	var gOld = '#northAmerica path';
+	var gNew = '#northAmerica path';
+	var loc = '#northAmerica';
+
+	$(gNew).attr("class", "selected");
+
+	$.get('locations-template.html', function(htmlArg){
+
+		console.log('get');
+
+		$("#locations-container").empty();
+
+		var source = $(htmlArg).find(loc).html();
+		var template = Handlebars.compile(source);
+		var context = {title: "My New Post", body: "This is my first post!"}
+		var html = template(context);
+		$("#locations-container").append(html);
+
+	});
 
 	$("g").click(function(event) {
 
