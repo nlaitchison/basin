@@ -166,16 +166,40 @@ nav li{
   border-right: 1px solid #c8c8c8;
 }
 
-/* Locations & Contact --------------------------------------*/
+/* Home --------------------------------------*/
+
+#banner{
+  background: url('../images/home-bg-blur.jpg') top center no-repeat;
+  height: 790px;
+  width: 100%;
+  background-size: cover;
+  padding: 0;
+/*  position: relative;
+  z-index: -1;*/
+     -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur1px);
+}
 
 #services{
-  padding-top: 65px;
+  padding-top: 25px; /*65px*/
+/*  margin-top: -500px;*/
 }
 
 #services .item{
   box-sizing: border-box;
   /*background-color: #EFEFEF;*/
   padding: 35px 35px;
+  width: 100%;
+
+}
+
+#services .item .circle{
+ width: 225px;
+ margin: 0 auto;
+ padding-bottom: 20px;
 }
 
 /* Locations & Contact --------------------------------------*/
