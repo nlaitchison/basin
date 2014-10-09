@@ -198,18 +198,20 @@ nav li{
 }*/
 
 svg{
-  opacity: .82;
+  opacity: .85;
 }
 
-#africa:hover, #northAmerica:hover path, #southAmerica:hover, #russia:hover path, #asia:hover path, #middleEast:hover , #europe:hover path{
+#africa:hover path, #northAmerica:hover path, #southAmerica:hover path, #russia:hover path, #asia:hover path, #middleEast:hover path, #europe:hover path,
+g path.selected{
   fill: #444;
     -webkit-transition:all .6s ease-in-out;
   -moz-transition:all .6s ease-in-out;
   -o-transition:all .6s ease-in-out;
   transition:all .6s ease-in-out;
+  cursor: pointer;
 }
 
-#africa, #northAmerica path, #southAmerica, #russia path, #asia path, #middleEast , #europe path{
+#africa path, #northAmerica path, #southAmerica, #russia path, #asia path, #middleEast , #europe path{
     -webkit-transition:all .6s ease-in-out;
   -moz-transition:all .6s ease-in-out;
   -o-transition:all .6s ease-in-out;

@@ -5,11 +5,59 @@ $(function(){
 
 	// FOOTER CONTACTS
 
-	$("#map").click(
-		function(event) {
-			console.log('click');
+	// $("path").click(
+	// 	function(event) {
+	// 		console.log('path', this.id);
+	// 		var path = '#'+this.id;
+	// 		$("path").attr("class", "selected");
+	// 	}
+	// );
+
+// var gSelected = false;
+var gOld = '';
+var gNew = '';
+
+	$("g").click(function(event) {
+
+		if(this.id != 'other' && this.id != ''){
+
+			gNew = '#'+this.id+' path';
+			console.log('old:', gOld,  'new:',this.id)
+
+			if(gNew != gOld){
+
+				$(gNew).attr("class", "selected");
+				$(gOld).attr("class", "");
+				gOld = gNew;
+			}
+
 		}
-	);
+
+		// if(!gSelected && gId != this.id){
+		// 	if(this.id != 'other' && this.id != ''){
+		// 		gId = this.id;
+		// 		gSelected = true;
+		// 		var current = '#'+gId+' path';
+		// 		$(current).attr("class", "selected");
+		// 	}
+		// }
+
+
+
+		// console.log(gId);
+		// var current = '#'+gId+' path';
+
+			// if((g != 'text' && g !='') && gSelected == false){
+			// 	console.log(g);
+			// 	$(g).attr("class", "selected");
+			// 	gSelected = true;
+			// }
+			// else if((g != 'text' && g !='') && gSelected == true){
+			// 	gSelected = false;
+			// 	$(g).attr("class", "");
+			// }
+
+	});
 
 	// // NAVIGATION PAGE POSITION BAR
 
