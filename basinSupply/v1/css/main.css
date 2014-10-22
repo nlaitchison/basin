@@ -1,0 +1,455 @@
+/* ---------------------------------------------------------------------------------------------------
+
+-----Info
+
+Designer & Developer: Nicole Aitchison
+Company: Basin Supply
+
+-----Color Swatch
+
+font grey: 404040
+font red: 701e1a
+grey: dddcdc
+
+-----Sections
+
+∆ General
+∆ Grid & Queries
+
+
+----------------------------------------------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------------------------------------------
+		∆ General
+---------------------------------------------------------------------------------------------------*/
+
+
+html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font: 14px Helvetica, sans-serif;
+  color: #404040;
+}
+
+section{
+  padding: 70px 0;
+}
+
+h1, h2, h3, h4{
+  text-align: center;
+  font: 26px'Libre Baskerville', serif;
+  color: #701e1a;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+h2{
+  text-transform: uppercase;
+  /*line-height: 42px;*/
+  padding-bottom: 8px;
+}
+
+h3{
+  font-size: 20px;
+  font-style: italic;
+}
+
+h4{
+  font-size: 18px;
+  text-transform: uppercase;
+/*  padding: 0 0 10px;*/
+}
+
+p{
+  padding: 0 0 25px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+p:last-child{
+  padding: 0;
+}
+
+a{
+  color: #701e1a;
+  /*text-decoration: none;*/
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+a:hover{
+  color: #404040;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	float: left;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.clear-fix{
+	clear: both;
+}
+
+.divider{
+  width: 100%;
+  min-height: 1px;
+  max-height: 1px;
+  background-color: #E4E4E4;
+  margin: 25px 0;
+}
+
+/* Header --------------------------------------*/
+
+header{
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  background: #f0f0f0;
+  /*padding: 10px;*/
+  border-top: 3px solid #701e1a;
+  border-bottom: 1px solid #c8c8c8;
+/*  -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.3);*/
+  z-index: 3;
+}
+
+nav li a{
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #505050;
+  text-decoration: none;
+}
+
+nav li.active, nav li:hover {
+  /*font-weight: bold;*/
+  background-color: #E2E2E2;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+nav ul{
+  float: right;
+}
+
+nav li{
+  padding: 10px 20px;
+  line-height: 35px;
+  border-left: 1px solid #c8c8c8;
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+#logo{
+  float: left;
+  width: 96px;
+  height: 35px;
+  padding: 10px 20px;
+  border-right: 1px solid #c8c8c8;
+}
+
+/* Home --------------------------------------*/
+
+#banner{
+  background: url('../images/home-bg-blur.jpg') top center no-repeat;
+  height: 790px;
+  width: 100%;
+  background-size: cover;
+  padding: 0;
+  color: #ccc;
+  text-align: center;
+/*  position: relative;
+  z-index: -1;*/
+/*     -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur1px);*/
+}
+
+.arrow{
+  padding-top: 100px;
+}
+
+#banner p{
+  padding-top: 15px;
+  text-align: center;
+  opacity: .8;
+}
+
+#banner h1, #banner h2{
+  color: #ccc;
+  opacity: .8;
+}
+
+#banner h2{
+  padding-top: 10px;
+  text-transform: none;
+  font-style: italic;
+}
+
+#banner .container{
+   box-sizing: border-box;
+  padding: 240px 220px 0;
+
+}
+
+#services{
+/*  padding-top: 25px;*/ /*65px*/
+/*  margin-top: -500px;*/
+}
+
+#services .item{
+  box-sizing: border-box;
+  /*background-color: #EFEFEF;*/
+  padding: 0 35px;
+  width: 100%;
+
+}
+
+#services .item .circle{
+ width: 225px;
+ margin: 0 auto;
+ padding-bottom: 20px;
+}
+
+/* Products & Equipment --------------------------------------*/
+
+#products{
+  background: #f0f0f0;
+}
+
+#products ul{
+  float: left;
+  padding-right: 50px;
+}
+
+#products ul li{
+  float: none;
+  padding-bottom: 10px;
+}
+
+#products h4{
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+#products img{
+  width: 100%;
+}
+
+/* Locations & Contact --------------------------------------*/
+
+#map{
+  background: url('../images/locations-bg.jpg') top center no-repeat;
+  height: 455px;
+  width: 100%;
+  background-size: cover;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+/*    -webkit-box-shadow: inset 0px 5px 12px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0px -5px 12px 0px rgba(0,0,0,0.3);
+  box-shadow: inset 0px -5px 12px 0px rgba(0,0,0,0.3);*/
+}
+
+/*#map .dark img{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#map .light{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+}*/
+
+/*#map svg{
+  position: absolute;
+  z-index: 8;
+  left: 0;
+  width: 100%;
+}*/
+
+/*#map .light img{
+  width: 100%;
+}*/
+
+svg{
+  opacity: .85;
+}
+
+#africa:hover path, #northAmerica:hover path, #southAmerica:hover path, #russia:hover path, #asia:hover path, #middleEast:hover path, #europe:hover path,
+g path.selected{
+  fill: #444;
+    -webkit-transition:all .6s ease-in-out;
+  -moz-transition:all .6s ease-in-out;
+  -o-transition:all .6s ease-in-out;
+  transition:all .6s ease-in-out;
+  cursor: pointer;
+}
+
+#africa path, #northAmerica path, #southAmerica, #russia path, #asia path, #middleEast , #europe path{
+    -webkit-transition:all .6s ease-in-out;
+  -moz-transition:all .6s ease-in-out;
+  -o-transition:all .6s ease-in-out;
+  transition:all .6s ease-in-out;
+}
+
+#locations{
+  -webkit-box-shadow: 0px -3px 12px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px -3px 12px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px -3px 12px 0px rgba(0,0,0,0.3);
+  background-color: #fff;
+}
+
+#locations ul.four.column.item{
+  height: 225px;
+}
+
+#locations ul.item li{
+  float: none;
+  padding-bottom: 5px;
+}
+
+#locations ul.item li img{
+  padding-right: 5px;
+}
+
+#locations p{
+  font-style: italic;
+}
+
+/* Footer --------------------------------------*/
+
+footer{
+  font-weight: lighter;
+}
+
+footer .top{
+  background-color: #f0f0f0;
+  padding: 50px 0;
+}
+
+footer .top ul{
+  width: 550px;
+  margin: 0 auto;
+}
+
+footer .top ul li{
+  padding: 0 10px;
+}
+
+footer .bottom{
+  background-color: #404040;
+  font-size: 12px;
+  padding: 50px 0;
+}
+
+footer .bottom, footer .bottom a{
+  color: #d0d0d0;
+}
+
+footer p{
+  padding-bottom: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------
+    ∆ Grid & Queries
+---------------------------------------------------------------------------------------------------*/
+
+.main-container{
+  /*margin-top: 70px;*/
+}
+
+.sub-container{
+  margin-top: 10px;
+}
+
+.container{
+  width: 92%; /* 73.68% 1050px*/
+  max-width: 1324px;
+  min-width: 300px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.column{
+  float: left;
+  box-sizing: border-box;
+  padding: 0 1%;
+  margin: 5px 0;
+}
+
+.left{
+  box-sizing: border-box;
+  padding-right: 15px;
+}
+
+.right{
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.one { width: 100%; }
+.two { width: 50%; }
+.three { width: 33.33%; }
+.two-three { width: 66.66%; }
+.four { width: 25%; }
+.five { width: 20%; }
+.six { width: 16.66%; }
+.twelve { width: 8.33%; }
+
+
+/*.one-6{width: 16.66%;}
+.two-6{width: 33.32%;}
+.three-6{width: 49.98%;}
+.four-6{width: 66.64%;}
+.five-6{width: 83.3%;}
+
+.one-4{ width: 25%; }
+.two-4{ width: 50%; }
+.three-4{ width: 75%; }
+.four-4{ width: 100%; }*/
+
+
+@media only screen and (max-width: 959px){
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+
+
